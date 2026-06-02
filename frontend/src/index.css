@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Outfit', system-ui, -apple-system, sans-serif;
+}
+
+/* Custom smooth scroll and transitions */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Subtle scrollbar style */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* Newsletter preview resets to prevent inheriting dashboard dark styles on the white card */
+.newsletter-preview-box {
+  color: #1e293b;
+  background-color: #ffffff;
+  text-align: left;
+}
+
+.newsletter-preview-box p,
+.newsletter-preview-box li,
+.newsletter-preview-box td,
+.newsletter-preview-box span,
+.newsletter-preview-box div {
+  color: #334155; /* Readable slate color for body copy */
+}
+
+.newsletter-preview-box h1,
+.newsletter-preview-box h2,
+.newsletter-preview-box h3,
+.newsletter-preview-box h4,
+.newsletter-preview-box strong {
+  color: #0f172a; /* Dark slate for headings and bold text */
+}
+
+.newsletter-preview-box a {
+  color: #2563eb; /* Clean blue for source links */
+  text-decoration: underline;
+}
+
