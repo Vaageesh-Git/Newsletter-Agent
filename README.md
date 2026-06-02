@@ -11,7 +11,7 @@ Give the agent a topic or goal. It **plans**, **researches**, **summarizes**, **
 ---
 
 ## 🔄 Pipeline Overview
-
+![alt text](newsletter_agent_architecture.svg)
 ```
 User Input / Goal
       │
