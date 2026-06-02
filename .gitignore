@@ -1,0 +1,33 @@
+# Virtual Environment
+backend/venv/
+venv/
+ENV/
+env/
+
+# Environment Variables (Secrets)
+backend/.env
+.env
+.env.local
+
+# Dependency directories
+frontend/node_modules/
+node_modules/
+
+# Production builds
+frontend/dist/
+dist/
+
+# Local outputs
+output/
+
+# Python Cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+
+# OS files
+.DS_Store
+Thumbs.db
