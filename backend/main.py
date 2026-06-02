@@ -41,6 +41,13 @@ class ApproveRequest(BaseModel):
 # ----------------------------------------------------
 # ROUTES
 # ----------------------------------------------------
+@app.get("/health")
+async def health_check():
+    """
+    Simple health check endpoint for monitoring tools.
+    """
+    return {"status": "healthy", "version": "1.0.0"}
+
 @app.post("/generate")
 async def generate_newsletter(req: GenerateRequest):
     """
