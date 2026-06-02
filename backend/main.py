@@ -42,6 +42,7 @@ class ApproveRequest(BaseModel):
 # ROUTES
 # ----------------------------------------------------
 @app.get("/health")
+@app.head("/health")
 async def health_check():
     """
     Simple health check endpoint for monitoring tools.
